@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 3rem;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 7s linear infinite;
+    -webkit-animation: my-animation 7s linear infinite;
+    animation: my-animation 7s linear infinite;
+
+  }
+    @-webkit-keyframes my-animation {
+        from { -webkit-transform: translateX(100%); }
+        to { -webkit-transform: translateX(-100%); }
+      }
+      
+      @keyframes my-animation {
+        from {
+          -moz-transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+        }
+        to {
+          -moz-transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  }
+}
+  
+  
+  #map {
+    height: 75vh;
+  }
+  
+  .gm-style-iw-d {
+    color: #000000;
+  }
